@@ -31,7 +31,9 @@ export default {
         password: ''
       },
       rules: {
-
+        username: [
+          { min: 3, max: 6, message: '请输入3-6位字符', trigger: blur }
+        ]
       }
     }
   }
